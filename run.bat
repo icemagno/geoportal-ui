@@ -1,0 +1,1 @@
+docker run --name angular-runner -v D:/Projetos/novo-geoportal:/usr/src/app -p 4200:4200 -it angular-app -p 4200:4200 -it angular-runner
