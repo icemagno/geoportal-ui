@@ -1,56 +1,39 @@
-.info-box-icon {
-    border-top-left-radius: 2px;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 2px;
-    display: block;
-    float: left;
-    height: 50px;
-    width: 50px;
-    text-align: center;
-    font-size: 40px;
-    line-height: 50px;
-    background: rgba(0, 0, 0, 0.2);
+
+.toolbutton{
+    margin-top: 3px; 
+    border: 0px; 
+    margin-bottom: 0px; 
+    padding-bottom: 1px !important; 
+    padding-top: 2px !important; 
+    text-align: center;    
 }
 
-.custom-attachment-list {
-    flex-grow: 1;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    min-height: 34px;
+#footerContainer{
+    z-index: 9999;
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    background-color: #3c8dbc;
 }
 
-.attachment-item {
-    display: inline-flex;
-    align-items: center;
-    background-color: #00a65a; /* Verde do AdminLTE */
-    color: #fff; /* Texto branco para melhor contraste */
-    border: 1px solid #008d4c; /* Borda um pouco mais escura */
-    border-radius: 4px;
-    margin: 2px;
-    padding: 2px 5px;
-    font-size: 14px;
-    line-height: 1.2;
-    max-width: 100%;
+#content-wrapper {
+    background-color: white;
+}
+
+#map-content{
+    padding: 0px !important;
+    margin: 0px !important ; 
 }
 
 .main-footer {
     height: 50px !important; 
     padding: 0px 10px 0px 10px !important; 
-    background-color: #222d32 !important;
-}
-
-.attachment-item .remove-attachment {
-    color: #fff; /* Ícone de remoção em branco */
-    margin-left: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    opacity: 0.8; /* Ligeiramente transparente */
-}
-
-.attachment-item .remove-attachment:hover {
-    opacity: 1; /* Totalmente opaco ao passar o mouse */
+    /* background-color: #222d32 !important; */ 
 }
 
 .borderless tbody tr td {
@@ -58,66 +41,8 @@
 	padding: 2px;
 }
 
-.info-box {
-    display: block;
-    min-height: 50px;
-    background: #fff;
-    width: 100%;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-    border-radius: 2px;
-    margin-bottom: 15px;
-}
-
-.info-box-content {
-    padding: 0px 10px;
-    margin-left: 50px;
-}
-
 .navbar a:hover {
 	color: #cacaca !important;
-	background: #222d32 !important
-}
-
-.main-footer td {
-	color: white
-}
-
-.footer-tip {
-	width: 250px; 
-	color:#999; 
-	font-size:12px
-}
-
-#containerLog p {
-	font-family: 'Courier New', Courier, monospace;
-}
-
-.attachment-container {
-    display: flex;
-    align-items: flex-start;
-    border: 1px solid #d2d6de;
-    border-radius: 0;
-    padding: 5px;
-    background-color: #fff;
-}
-
-#addAttachmentBtn {
-    flex-shrink: 0;
-    margin-right: 10px;
-}
-
-.sidebar .progress-group {
-    padding: 10px 15px;
-    margin-bottom: 0;
-}
-
-.sidebar .progress.sm {
-    height: 10px;
-    margin-bottom: 0;
-}
-
-.sidebar .progress-bar {
-    font-size: 12px;
-    line-height: 10px;
+	/* background: #222d32 !important */ 
 }
 

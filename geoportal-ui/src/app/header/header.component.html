@@ -1,23 +1,96 @@
-<header class="main-header">
+<header class="main-header" style="display:none">
 
-    <nav class="navbar navbar-static-top" role="navigation" style="background-color: #222d32; color: white;">
+    <nav class="navbar navbar-static-top" role="navigation" >
 
-        <a href="#" class="sidebar-toggle" data-toggle="push-menu" style="color: white" role="button"></a>
+        <a href="#" class="sidebar-toggle" data-toggle="push-menu"  role="button"></a>
 
         <div class="container-fluid">
 
             <div class="navbar-header">
-                <img id="logoMd2" src="http://localhost:36020/common/img/shield.png"
+
+                <img id="logoMd2" src="assets/img/logo-md.png"
                     style="height: 40px; float: left; margin-top: 5px; margin-left: 10px; margin-right: 10px;">
+
+                <img id="logosisgeodef" src="assets/img/marca-sisgeodef.png"
+                    style="height: 40px; float: left; margin-top: 5px; margin-left: 10px; margin-right: 10px;">
+
             </div>
             <div style="padding-left: 10px; padding-top: 5px; height: 40px; float: left">
-                <span style="font-family:Courier New"></span>
+                <span style="font-family:Courier New">&nbsp;</span>
                 <br />
-                <span style="font-family:Courier New"></span>
+                <span style="font-family:Courier New">&nbsp;</span>
+            </div>
+
+            <div style="padding-left: 150px; float: left">
+                <app-ferramentas-menu></app-ferramentas-menu>
+            </div>
+            <div style="padding-left: 30px; float: left">
+                <app-solucionadores-menu></app-solucionadores-menu>
             </div>
 
             <div class="navbar-custom-menu">
-                &nbsp;
+                <ul class="nav navbar-nav" >
+                    <li class="dropdown messages-menu">
+                        <a href="#" class="dropdown-toggle" style="border: 0px; " data-toggle="dropdown" aria-expanded="false">
+                            <i class="fa fa-envelope-o"></i>
+                            <span class="label label-success">4</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="header">You have 4 messages</li>
+                            <li class="footer"><a href="#">See All Messages</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown tasks-menu">
+                        <a href="#" class="dropdown-toggle" style="border: 0px;" data-toggle="dropdown" aria-expanded="false">
+                            <i class="fa fa-share-square-o"></i>
+                            <span class="label label-success">2</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li id="pgrTitleAct" style="display: none;"  class="header">Envios Ativos</li>
+                            <li id="pgrTitleIna" class="header">Nenhum Envio Ativo</li>
+                            <li>
+                                <ul class="menu" id="progressContainer"></ul>
+                            </li>
+                            <li class="footer">
+                                <a id="progressWarning" style="display: none;"  href="#">Não desligue o computador</a>
+                            </li>
+                        </ul>
+                    </li>                    
+                    <li class="dropdown user user-menu">
+                        <a href="#" class="dropdown-toggle" id="user-menu" data-toggle="dropdown">
+                            <span class="hidden-xs">Usuário</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="user-header" >
+                                <p><small>Ferramentas do Usuário</small></p>
+                            </li>
+                            <li class="user-body">
+                                <div class="row">
+                                    <div class="col-xs-4 text-center">
+                                        <a href="#" class="btn btn-xs btn-default btn-flat">Manual</a>
+                                    </div>
+                                    <div class="col-xs-4 text-center">
+                                        <a href="#" class="btn btn-xs btn-default btn-flat">ET-EDGV</a>
+                                    </div>
+                                    <div class="col-xs-4 text-center">
+                                        <a href="#" class="btn btn-xs btn-default btn-flat">Teste</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="user-footer">
+                                <div class="pull-left">
+                                    <a href="#" class="btn btn-success btn-flat">Teste</a>
+                                </div>
+                                <div class="pull-right">
+                                    <a href="#" class="btn btn-danger btn-flat">Sair</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+                <app-navbar-tasks></app-navbar-tasks>
+                <app-navbar-user-menu></app-navbar-user-menu>
             </div>
 
         </div>

@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MainComponent } from './main/main.component';
 import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 
 @Component({
@@ -10,7 +9,6 @@ import { SidebarComponent } from './sidebar/sidebar.component';
   imports: [
     MainComponent,
     HeaderComponent,
-    FooterComponent,
     SidebarComponent
   ],
   templateUrl: './app.component.html',
