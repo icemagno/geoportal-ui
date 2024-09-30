@@ -8,6 +8,12 @@
     text-align: center;    
 }
 
+.tools-button{
+    padding: 0px !important;
+    padding-top: 7px !important;
+    height: 66px !important;
+}
+
 #footerContainer{
     z-index: 9999;
     width: 100%;
