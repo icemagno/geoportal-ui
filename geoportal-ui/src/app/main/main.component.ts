@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FooterComponent } from '../footer/footer.component';
+import { MenuLateralDireitaComponent } from '../menu-lateral-direita/menu-lateral-direita.component';
 
 declare const Cesium: any;
 declare const $: any;
@@ -8,7 +9,8 @@ declare const $: any;
   selector: 'app-main',
   standalone: true,
   imports: [
-    FooterComponent
+    FooterComponent,
+    MenuLateralDireitaComponent
   ],
   templateUrl: './main.component.html',
   styleUrl: './main.component.css'
